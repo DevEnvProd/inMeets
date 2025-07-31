@@ -11,6 +11,7 @@ import { Dashboard } from './pages/Dashboard'
 import { TeamManagement } from './pages/TeamManagement'
 import { Properties } from './pages/Properties'
 import { ProjectManagement } from './pages/ProjectManagement'
+import { Clients } from './pages/Clients'
 
 function App() {
   return (
@@ -63,10 +64,7 @@ function App() {
           <Route path="/clients" element={
             <ProtectedRoute>
               <DashboardLayout>
-                <div className="p-8">
-                  <h1 className="text-2xl font-bold text-gray-900">Clients</h1>
-                  <p className="text-gray-600 mt-2">Client management coming soon...</p>
-                </div>
+                <Clients />
               </DashboardLayout>
             </ProtectedRoute>
           } />
